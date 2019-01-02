@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  padding: 0 0 50px 0;
+  background-color: rgba(157, 161, 159, 0.1);
+  font-family:'Roboto Condensed', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h3 {
+  text-align: center;
+}
+
+#popUpForm {
+  position: fixed;
+  z-index: 9;
+  background-color: #e8e5f4;
+  border: 2px solid rgba(131, 124, 110, 0.85);
+  padding: 50px 40px 30px 40px;
+  left: 35%;
+  top: 35%;
+}
+
+#popUpForm h4 {
+  margin-top: 0;
+}
+
+#submit-name {
+  border: transparent;
+  border-radius: 5px;
+  background-color: rgb(42, 147, 236);
+  color: #fff;
+  padding: 6px 30px;
+}
+
+.submit-btn-container {
+  margin: auto;
+  margin-top: 25px;
+  text-align: center;
+}
+
+#container {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+#players-container {
+  text-align: center;
+  padding: 10px 0;
+  width: 930px;
+  background-color:rgba(26, 119, 203, 0.6);
+}
+
+#clock {
+  position: absolute;
+  top: 20px;
+  left: 540px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(128, 221, 68, 0.76);
+  border-radius: 50%;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+#inner-main {
+  position: relative;
+  height: 510px;
+}
+
+.error-msg {
+  color: rgb(226, 0, 0);
+  margin: 5px 0;
+  font-size: 12px;
+  text-align: right;
+}
+
+canvas {
+  border: 5px inset #000;
+  margin: auto;
+  display: inline;
+  background-color: #fff;
+}
+
+canvas:hover {
+  cursor: url("https://s3.amazonaws.com/fast-draw/pencil_icon.png"), auto;
+}
+
+div#container {
+  text-align: center;
+}
+
+div#main {
+  text-align: left;
+  display: inline-block;
+}
+
+#chat-section {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  height: 490px;
+  background-color: rgb(198, 231, 183);
+  padding:10px;
+}
+
+#chat-head {
+  text-align: center;
+  border-bottom: 0.5px white solid;
+  margin-top: 0;
+  padding-bottom: 5px;
+}
+
+#chat-head h4 {
+  margin: 5px 0;
+}
+
+#chat-head .player_initials {
+  margin: 5px 15px;
+  background-color: rgba(66, 170, 28, 0.7);
+  padding: 5px 10px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+#chat-log {
+  list-style: none;
+  padding: 0;
+  height: 380px;
+  background-color: #fff;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+div#sender-id {
+  padding-left: 0;
+  text-align: left;
+}
+
+div#chat-message {
+  text-align: left;
+}
+
+.message-text {
+  color: #fff;
+  background-color:rgb(42, 147, 236);
+  border-radius: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+  display: inline-block;
+  max-width: 230px;
+  word-break: break-word;
+}
+
+.message-text p {
+  padding: 3px 15px 3px 8px;
+  margin: 0;
+  display: inline-block;
+}
+
+#message-form {
+  max-height: 20.5px;
+  min-height: 20.5px;
+  padding: 5px 3px 0px 10px;
+  vertical-align: middle;
+  border: 1.5px solid #04b4b2;
+  min-width: 257px;
+  outline: none;
+  resize: none;
+  display: inline;
+  font-family: Tahoma, Geneva, sans-serif;
+  /* TODO: Implement JQuery Scrollable */
+}
+
+.enter-button {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  background-color: #04b4b2;
+  cursor: pointer;
+  color: #fff;
+  line-height: 27.5px;
+  vertical-align: bottom;
+  font-size: 20px;
+  border: none;
+  display: inline;
+  text-align: center;
+  width: 27px;
+  height: 40px;
+  outline: none;
+}
+
+.enter-button:active {
+  background: #04959a;
+}
+
+#chat-input-section {
+  position: absolute;
+  bottom: 25px;
+  width: inherit;
+}
+
+#draw-word-section {
+  text-align: center;
+  background: #90ee90c2;
+  width: 930px;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+#tool-kit {
+  position: absolute;
+  z-index: 2;
+  left: -82px;
+  height: 592px;
+  top: -39px;
+  padding: 0 15px;
+  background-color: rgb(168, 168, 172);
+}
+
+#pencil-tool, #eraser-tool  {
+  position: relative;
+  display: block;
+  margin:20px 0;
+  border: 2px solid #1e6558;
+  background-color: #fff;
+  padding: 8px;
+}
+
+#refresh-canvas {
+  position: absolute;
+  background-color: inherit;
+  padding: 8px;
+  border: 0;
+  bottom:50px;
+  cursor: pointer;
+}
+
+#refresh-canvas:hover {
+  animation: spinButton 0.4s;
+}
+
+@keyframes spinButton {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(180deg);}
+}
