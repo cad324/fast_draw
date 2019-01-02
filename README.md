@@ -14,7 +14,7 @@ If a player guesses the word correctly by typing it exactly into the chat, he/sh
 
 The game continues until a player gets to 10 points.
 
-![](documents/content/game_basic_ui.png)
+![](https://github.com/cad324/fast_draw/blob/master/documents/content/game_basic_ui.PNG)
 
 ## Status
 
